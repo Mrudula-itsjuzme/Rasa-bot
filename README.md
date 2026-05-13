@@ -1,43 +1,100 @@
 # Rasa Chatbot Application
 
-This application provides a real-time conversational interface powered by a Rasa server. Key features include Voice Input, Text-to-Speech (TTS), and customizable UI themes.
+A desktop chatbot interface powered by a local Rasa server, with voice input, text-to-speech, and customizable UI themes.
+
+This project demonstrates an end-to-end conversational AI workflow: user input, intent processing through Rasa, bot response generation, and optional voice output.
+
+---
 
 ## Features
 
-- **Text-to-Speech (TTS):** Automated reading of bot responses, which can be toggled in settings.
-- **Voice Input:** Integration for speech-to-text messaging.
-- **UI Customization:** Options to modify themes (e.g., blue, dark-blue, green) and fonts (e.g., Helvetica, Arial, Courier New).
-- **Rasa Integration:** Communicates with a local Rasa server to process user intents and generate responses.
-- **Session Management:** Easy navigation back to the welcome screen to reset configurations.
+- Rasa server integration
+- text chat interface
+- voice input support
+- text-to-speech output
+- theme customization
+- font customization
+- session reset through welcome screen
+- local API communication through `http://localhost:5005`
+
+---
+
+## Application flow
+
+```text
+User Input
+    ↓
+Desktop Chat UI
+    ↓
+Rasa Server
+    ↓
+Intent + Response Handling
+    ↓
+Chat Output / Text-to-Speech
+```
+
+---
 
 ## Requirements
 
-Ensure all dependencies listed in `requirements.txt` are installed to avoid runtime errors.
+- Python 3.8+
+- Rasa
+- microphone permissions for voice input
+- dependencies listed in `requirements.txt`
 
-## Installation and Setup
+---
 
-1. Clone or download the repository.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Start the Rasa server:
-   ```bash
-   rasa run
-   ```
-4. Launch the application:
-   ```bash
-   python main.py
-   ```
+## Quick start
 
-## Application Workflow
+```bash
+git clone https://github.com/Mrudula-itsjuzme/Rasa-bot.git
+cd Rasa-bot
 
-1. **Welcome Screen:** Configure settings or start the chat.
-2. **Chat Interface:** Interact via text or voice.
-3. **Processing:** Messages are sent to `http://localhost:5005` for processing by Rasa.
-4. **Response:** The bot's response is displayed and optionally read aloud.
+pip install -r requirements.txt
+```
 
-## Important Considerations
+Start the Rasa server:
 
-- The Rasa server must be active before starting the application.
-- Ensure microphone permissions are granted for voice input functionality.
+```bash
+rasa run
+```
+
+Launch the app:
+
+```bash
+python main.py
+```
+
+---
+
+## Important notes
+
+- The Rasa server must be running before the app is launched.
+- Voice input requires microphone access.
+- The app expects the Rasa endpoint at `http://localhost:5005`.
+
+---
+
+## Tech stack
+
+- Python
+- Rasa
+- Speech-to-text workflow
+- Text-to-speech workflow
+- Desktop GUI development
+
+---
+
+## Future improvements
+
+- add screenshots of the chat interface
+- add sample intents and stories
+- include training instructions for the Rasa model
+- add Docker setup for easier local deployment
+- improve error handling when the Rasa server is offline
+
+---
+
+## Author
+
+Built by [Pedamallu Sai Mrudula](https://github.com/Mrudula-itsjuzme) as part of a conversational-AI and chatbot-development portfolio.

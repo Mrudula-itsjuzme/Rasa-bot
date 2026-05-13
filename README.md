@@ -6,6 +6,19 @@ This project demonstrates an end-to-end conversational AI workflow: user input, 
 
 ---
 
+## Project links and evidence
+
+| Item | Link / Note |
+|---|---|
+| Repository | https://github.com/Mrudula-itsjuzme/Rasa-bot |
+| Paper / reference | Conversational-AI application project; no paper attached |
+| Demo video | Not uploaded yet |
+| Deployment | Local desktop + local Rasa server workflow; no hosted deployment |
+| Dataset note | Uses Rasa NLU/training data when configured locally; add sample intents/stories in a future update |
+| Result screenshots | Add chat interface screenshots, voice input demo GIFs, and sample conversation screenshots under `docs/` or `screenshots/` |
+
+---
+
 ## Features
 
 - Rasa server integration
